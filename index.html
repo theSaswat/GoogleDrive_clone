@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="data:image/png;base64,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" />
+    <title>Google Drive Clone</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        margin:0;
+        
+      }
+     
+      #main{
+        display:flex;
+      }
+      #left{
+        flex:1;
+        padding-left: 25px;
+      }
+      #right{
+        flex:4;
+      }
+      #button{
+       text-align: center;
+       direction: rtl;
+       flex:4;
+       margin-left:850px;
+       
+      }
+   
+      #b1{
+        border:none;
+      }
+        #divide, #divide1{
+            display:flex;
+            gap: 2rem;
+            width:70rem;
+            height: 18rem;
+        }
+        .card-text{
+            text-align: center;
+        }
+        #l1{
+          background-color:rgba(245, 245, 245, 0.418);
+          width:8rem;
+          text-align: center;
+          height:3rem;
+          padding-top:8px;
+          margin-left: 20px;
+          border-radius: 50px;
+        }
+        #l1:hover{
+          background-color: whitesmoke;
+        }
+        #b2{
+          background-color: white; 
+          color: rgba(0, 0, 255, 0.603);
+          font-weight: bolder; 
+         border-color: gainsboro;
+          width: 8rem;
+        }
+        .l2:hover{
+          background-color: gainsboro;
+        }
+        #g1{
+          flex:1;
+        }
+        #side{
+          display:flex;
+        }
+        #b1{
+          border:none;
+          background-color: white;
+          font-weight: bolder;
+        }
+        #nav{
+          margin:10px;
+        }
+        #s1{
+          display:flex;
+          padding-top: 10px;
+        }
+        #left2{
+          margin-left:8rem;
+          display: flex;
+          margin-top: 10px;
+        }
+        #search{
+          background-color: lavender;
+          display:flex;
+          margin-left: 8rem;
+          height:3rem;
+          border-radius: 8px;
+        
+        }
+        #icon{
+          margin: 10px;
 
+        }
+       input{
+          border:none;
+          background-color: lavender;
+          width:42rem;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="nav">
+    <div id="s1">
+      <img src="data:image/png;base64,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" width="50rem" height="40rem"/>
+   <h2 style="color:grey">Drive</h2>
+
+   <div id="search">
+    <span class="material-icons" id="icon">
+      search
+      </span>
+     <input placeholder="Search in Drive"/>
+     <span class="material-icons" id="icon">
+      tune
+      </span>
+    </div>
+    
+
+   <div id="left2">
+   <span class="material-icons">
+    help_outline
+    </span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="material-icons">
+      settings
+      </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="material-icons">
+        apps
+        </span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="material-icons">
+          account_circle
+          </span>
+        </div>
+    </div>
+
+  </div>
+    
+  <hr>
+<div id="main">
+    <div id="left">
+    
+      <div id="l1"><img src="1.JPG"/>New</div><br>
+      <div class="l2"><span class="material-icons">
+        add_to_drive
+        </span>&nbsp;&nbsp;My Drive</div><br>
+      <div class="l2"><span class="material-icons">devices</span>&nbsp;&nbsp;&nbsp;Computers</div><br>
+      <div class="l2"><span class="material-icons">
+        people
+        </span>
+        &nbsp;&nbsp;Shares with me</div><br>
+      <div class="l2"><span class="material-icons">query_builder</span>&nbsp;&nbsp;&nbsp;Recent</div><br>
+      <div class="l2"><span class="material-icons">star_border</span>&nbsp;&nbsp;&nbsp;Starred</div><br>
+      <div class="l2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+      </svg>&nbsp;&nbsp;&nbsp;Trash</div>
+      <hr>
+      <div class="l2"><img src="4.JPG"/>&nbsp;&nbsp;&nbsp;Storage</div>
+ 
+      <img src="5.JPG"/>
+      2.42 GB of 15 GB used
+      <button id="b2">Buy Storage</button>
+
+    </div>
+    
+    <div id="right">
+      <div id="side">
+      <div id="g1"> 
+      <select style="border:none">
+        <option selected>My Drive</option>
+      </select>
+    </div>
+      <div id="button">
+        <img src="6.JPG"/>
+        <button onclick="listview()" id="b1">List View</button>
+      </div>
+      
+    </div>
+    <hr>
+<div id="divide">
+  
+            <div class="card" style="width: 18rem; height: 16rem" >
+                <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">img1.jpeg</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; height: 16rem">
+                <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">word.docx</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; height: 16rem">
+                <img src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">name.pdf</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; height: 16rem">
+                <img src="https://images.pexels.com/photos/3401897/pexels-photo-3401897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">Dec 22 Adv Frontend</p>
+                </div> 
+                </div>
+              </div>
+
+                <div id="divide1"> 
+
+                <div class="card" style="width: 18rem; height: 16rem">
+                  <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">img2.jpeg</p>
+                  </div>
+                </div>
+
+
+           
+                <div class="card" style="width: 18rem; height: 16rem">
+                  <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">word2.docx</p>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem; height: 16rem">
+                  <img src="https://images.pexels.com/photos/2764993/pexels-photo-2764993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">nam2.pdf</p>
+                  </div>
+                </div>
+  
+                <div class="card" style="width: 18rem; height: 16rem">
+                  <img src="https://images.pexels.com/photos/1382726/pexels-photo-1382726.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">img2.pdf</p>
+                  </div>
+              </div> 
+
+  </div> 
+</div>
+
+</div>
+
+<script>
+  function listview(){
+    var btn_ref = document.getElementById("b1");
+    var divide_ref = document.getElementById("divide");
+    var divide1_ref = document.getElementById("divide1");
+    
+    if(btn_ref.innerText == "List View"){
+      btn_ref.innerText = "Grid View";
+      btn_ref.style.color = "blue";
+      divide_ref.style.display = "table";
+      divide1.style.display = "table";
+    }
+    else{
+      btn_ref.innerText = "List View";
+      divide_ref.style.display = "flex";
+      btn_ref.style.color = "red"; 
+      divide1.style.display = "flex"; 
+
+    }  
+  }
+</script>
+</body>
+</html>
